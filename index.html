@@ -1,19 +1,44 @@
 <html>
   <head>
-    <script src="https://hackpad.com/GoJ6ahFkxLB.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div align="center">
-      <iframe src="https://www.google.com/calendar/embed?src=aflcfr9teds0uelhl9cuss2f4s%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <h1>Contact</h1>
-    <p>Event info? Reach out at MTLdata@VONalytics.com</p>
-    <h1>Subscribe</h1>
-    <p>Coming Soon.</p>
+      <div class="row", align="center">
+        <div class="span6">
+            <iframe src="https://www.google.com/calendar/embed?src=aflcfr9teds0uelhl9cuss2f4s%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="80%" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <br>
+        <div class="span6", align="center">
+          <script>
+            window.addEventListener("message", function(event) {
+              if (event.origin == "https://hackpad.com") {
+                var args = event.data.split(":");
+                if (args.length < 3 || args[0] != "hackpad-GoJ6ahFkxLB" || args[1] != "height") {
+                  return;
+                }
+                var height = Number(args[2]) + 60; // 60 is non-ace elements offset
+                var hp = document.getElementById("hackpad-GoJ6ahFkxLB");
+                if (hp && height > 420) {
+                  hp.style.height = height + "px";
+                }
+              }
+            }, false);
+            </script>
+          <iframe id="hackpad-GoJ6ahFkxLB" src="https://hackpad.com/ep/api/embed-pad?padId=GoJ6ahFkxLB" style="border:0px;width:80%;height:420px;"></iframe>
+        </div>
+      </div>
 
-    <noscript>
-      <div align="center">View <a href="https://hackpad.com/GoJ6ahFkxLB">MTL DATA MANIFESTO</a> on Hackpad.</div>
-    </noscript>
+      <div class="row">
+        <div class="span4">
+          <h1>Contact</h1>
+            <p>Event info? Reach out at MTLdata@VONalytics.com</p>
+        </div>
+        <div class="span8">
+          <h1>Subscribe</h1>
+            <p>Coming Soon.</p>
+        </div>
+      </div>
+    
+    
   </body>
 </html>
